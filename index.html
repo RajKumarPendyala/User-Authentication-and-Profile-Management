@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login Page</title>
+<style>
+    body {
+        font-family: 'Verdana', sans-serif;
+        background: linear-gradient(135deg, #74ebd5, #acb6e5);
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form {
+        background-color: white;
+        border-radius: 10px;
+        padding: 30px;
+        width: 350px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+
+    form h2 {
+        margin-bottom: 20px;
+        color: white;
+        background-color: #4caf50;
+        font-weight: 600;
+        padding: 5px;
+    }
+
+    form label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 14px;
+        color: #666;
+        text-align: left;
+    }
+
+    form input[type="text"],
+    form input[type="password"] {
+        width: 93%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    form input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    form input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+    form a {
+        display: inline-block;
+        margin-top: 15px;
+        color: #4caf50;
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    form a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+<form action="log" method="post">
+    <h2>Login</h2>
+    <label for="uname">User Name</label>
+    <input type="text" id="uname" name="uname" placeholder="Enter your username" required>
+    <label for="pword">Password</label>
+    <input type="password" id="pword" name="pword" placeholder="Enter your password" required>
+    <input type="submit" value="Login">
+    <a href="register.html">New User? Register Here</a>
+</form>
+</body>
+</html>
